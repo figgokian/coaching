@@ -107,20 +107,24 @@
             </div>
         </section>
 
-        <!-- 2. DER TRANSFORMATION-BEWEIS -->
+        <!-- 2. DER TRANSFORMATION-BEWEIS (MIT DEINEN BILDERN) -->
         <section class="py-16 border-t border-bordercolor/50">
             <h2 class="text-3xl font-bold text-white mb-8">Ergebnisse sprechen lauter als Versprechen</h2>
             
             <div class="grid grid-cols-2 gap-4 mb-8">
-                <!-- VORHER Placeholder -->
+                <!-- VORHER Bild -->
                 <div class="aspect-[3/4] bg-card border border-bordercolor rounded-xl flex items-end justify-start p-4 relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
-                    <span class="relative z-10 font-bold text-gray-400 tracking-wider text-sm">VORHER</span>
+                    <!-- Echtes Vorher-Bild aus dem Repo -->
+                    <img src="WhatsApp Image 2026-10-20 at 14.09.55.jpeg" alt="Vorher" class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/10 to-transparent z-10"></div>
+                    <span class="relative z-20 font-bold text-gray-300 tracking-wider text-sm drop-shadow-md">VORHER</span>
                 </div>
-                <!-- NACHHER Placeholder -->
-                <div class="aspect-[3/4] bg-card border border-bordercolor rounded-xl flex items-end justify-start p-4 relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
-                    <span class="relative z-10 font-bold text-accent tracking-wider text-sm">NACHHER</span>
+                <!-- NACHHER Bild -->
+                <div class="aspect-[3/4] bg-card border border-accent/30 rounded-xl flex items-end justify-start p-4 relative overflow-hidden group shadow-[0_0_15px_rgba(255,87,34,0.1)]">
+                    <!-- Echtes Nachher-Bild aus dem Repo -->
+                    <img src="WhatsApp Image 2026-10-20 at 14.09.56.jpeg" alt="Nachher" class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/10 to-transparent z-10"></div>
+                    <span class="relative z-20 font-bold text-accent tracking-wider text-sm drop-shadow-md">NACHHER</span>
                 </div>
             </div>
 
@@ -229,37 +233,31 @@
                 <p class="text-gray-400 text-lg">Füll das Formular kurz aus (dauert 60 Sekunden). Ich melde mich innerhalb von 24 Stunden per WhatsApp bei dir für ein unverbindliches Erstgespräch.</p>
             </div>
 
-            <!-- Hier ist die neue ID form="coaching-form" -->
             <form id="coaching-form" class="space-y-5 bg-card p-6 sm:p-8 rounded-xl border border-bordercolor">
                 
                 <div class="space-y-1">
                     <label for="name" class="block text-sm font-medium text-gray-300">Name (Vorname & Nachname)</label>
-                    <!-- WICHTIG: name="Name" hinzugefügt -->
                     <input type="text" id="name" name="Name" required class="w-full bg-dark border border-bordercolor rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors placeholder-gray-600" placeholder="Max Mustermann">
                 </div>
 
                 <div class="grid grid-cols-2 gap-5">
                     <div class="space-y-1">
                         <label for="age" class="block text-sm font-medium text-gray-300">Alter</label>
-                        <!-- WICHTIG: name="Alter" hinzugefügt -->
                         <input type="number" id="age" name="Alter" required min="16" max="99" class="w-full bg-dark border border-bordercolor rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors placeholder-gray-600" placeholder="25">
                     </div>
                     <div class="space-y-1">
                         <label for="phone" class="block text-sm font-medium text-gray-300">Handynummer (WhatsApp)</label>
-                        <!-- WICHTIG: name="WhatsApp" hinzugefügt -->
                         <input type="tel" id="phone" name="WhatsApp" required class="w-full bg-dark border border-bordercolor rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors placeholder-gray-600" placeholder="+41 79 000 00 00">
                     </div>
                 </div>
 
                 <div class="space-y-1">
                     <label for="instagram" class="block text-sm font-medium text-gray-300">Instagram-Handle <span class="text-gray-500">(optional)</span></label>
-                    <!-- WICHTIG: name="Instagram" hinzugefügt -->
                     <input type="text" id="instagram" name="Instagram" class="w-full bg-dark border border-bordercolor rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors placeholder-gray-600" placeholder="@deinname">
                 </div>
 
                 <div class="space-y-1">
                     <label for="goal" class="block text-sm font-medium text-gray-300">Aktuelles Ziel</label>
-                    <!-- WICHTIG: name="Ziel" hinzugefügt -->
                     <select id="goal" name="Ziel" required class="w-full bg-dark border border-bordercolor rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors appearance-none">
                         <option value="" disabled selected>Bitte auswählen...</option>
                         <option value="Fett abbauen & Sixpack">Fett abbauen & Sixpack</option>
@@ -270,7 +268,6 @@
 
                 <div class="space-y-1 pb-4">
                     <label for="hurdle" class="block text-sm font-medium text-gray-300">Grösste Hürde bisher</label>
-                    <!-- WICHTIG: name="Groesste_Huerde" hinzugefügt -->
                     <select id="hurdle" name="Groesste_Huerde" required class="w-full bg-dark border border-bordercolor rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors appearance-none">
                         <option value="" disabled selected>Bitte auswählen...</option>
                         <option value="Ernährung / Disziplin">Ernährung / Disziplin</option>
